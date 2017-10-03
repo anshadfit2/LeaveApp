@@ -26,18 +26,15 @@
     dispatch_once(&once_Token, ^{
         mapping = [NSDictionary dictionaryWithObjectsAndKeys:@"LastUpdated",@"lastUpdated",nil];
         });return mapping;
-    
-    
 }
 
 - (instancetype)initWithDictionary:(NSDictionary *)dict error:(NSError **)error{
     
     self = [super initWithDictionary:dict error:error];
     return self;
-    
 }
 
-- (NSDictionary *)toDictionary{
+- (NSDictionary *)toDictionary {
     
    return [self toDictionaryWithKeys:[[self.class mappingDictionary] allKeys]];
 }

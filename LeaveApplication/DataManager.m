@@ -51,11 +51,10 @@
         NSData *jsonData = [NSData dataWithContentsOfFile:[self.fileUrl path]];
         
         if(jsonData){
-            NSError *error;
             NSArray *jsonAllEmployeesLeaveEntries = (NSArray *)[NSJSONSerialization JSONObjectWithData:jsonData
                                                                                                options:NSJSONReadingMutableContainers
                                                                                                  error:nil];
-            _allEmployeeLeaveEntries = [JSONModel arrayOfModelsFromDictionaries:jsonAllEmployeesLeaveEntries error:nil];
+            _allEmployeeLeaveEntries = [EmployeeLeaveInfo arrayOfModelsFromDictionaries:jsonAllEmployeesLeaveEntries error:nil];
         }
     }
     return _allEmployeeLeaveEntries;
@@ -66,6 +65,23 @@
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"userName == [cd] %@",employee.userName];
     EmployeeLeaveInfo *employeeLeaveInfo = [self.allEmployeeLeaveEntries findFirstByPredicate:predicate];
     return employeeLeaveInfo;
+}
+
+- (NSArray *)stubData{
+    
+    return @[@{  @"UserName" : @"Qwertyyy",
+                  @"UserId" : @"",
+                  @"LeaveEntries" : @[
+                  @{
+                      @"Date" : @"10-10-2017",
+                      @"Reason" : @"Not working as Fever"
+                  },
+                  @{
+                      @"Date" : @"12-10-2017",
+                      @"Reason" : @"Not working fever, attending marriage"
+                  }]
+                }
+            ];
 }
 
 @end

@@ -10,6 +10,8 @@
 		3F58C17F1F792E4D00D66F1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F58C17E1F792E4D00D66F1E /* Assets.xcassets */; };
 		3F58C1811F792E9B00D66F1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F58C1801F792E9B00D66F1E /* Main.storyboard */; };
 		3F58C1831F792ECB00D66F1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F58C1821F792ECB00D66F1E /* LaunchScreen.storyboard */; };
+		3F7436391F835A4E00ADD097 /* LeaveEntriesDisplayInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7436381F835A4E00ADD097 /* LeaveEntriesDisplayInteractor.m */; };
+		3F7436401F838C0600ADD097 /* LeaveApplicationEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F74363F1F838C0600ADD097 /* LeaveApplicationEditViewController.m */; };
 		3F8A18511F7A10D0004A8617 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A18501F7A10D0004A8617 /* LoginView.m */; };
 		3F8A18571F7A584D004A8617 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A18561F7A584D004A8617 /* SignUpViewController.m */; };
 		3F8A185A1F7A5B50004A8617 /* SignUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A18591F7A5B50004A8617 /* SignUpView.m */; };
@@ -30,6 +32,8 @@
 		3F9FF14D1F751BFE0016F385 /* MDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9FF14C1F751BFE0016F385 /* MDBaseModel.m */; };
 		3F9FF1511F75366B0016F385 /* MDUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9FF1501F75366B0016F385 /* MDUser.m */; };
 		3F9FF1541F7538830016F385 /* MDCollectionModelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9FF1531F7538830016F385 /* MDCollectionModelItem.m */; };
+		3FA617A91F835525003D76E4 /* LeaveEntriesDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA617A81F835525003D76E4 /* LeaveEntriesDisplayViewController.m */; };
+		3FA617AC1F8357FB003D76E4 /* LeaveItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA617AB1F8357FB003D76E4 /* LeaveItemCell.m */; };
 		567C03BF8A28FC25D6B97E73 /* Pods_LeaveApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574A33E5549EDB63DD184F21 /* Pods_LeaveApplication.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +42,10 @@
 		3F58C17E1F792E4D00D66F1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F58C1801F792E9B00D66F1E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3F58C1821F792ECB00D66F1E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F7436371F835A4E00ADD097 /* LeaveEntriesDisplayInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaveEntriesDisplayInteractor.h; sourceTree = "<group>"; };
+		3F7436381F835A4E00ADD097 /* LeaveEntriesDisplayInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaveEntriesDisplayInteractor.m; sourceTree = "<group>"; };
+		3F74363E1F838C0600ADD097 /* LeaveApplicationEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaveApplicationEditViewController.h; sourceTree = "<group>"; };
+		3F74363F1F838C0600ADD097 /* LeaveApplicationEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaveApplicationEditViewController.m; sourceTree = "<group>"; };
 		3F8A184F1F7A10D0004A8617 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
 		3F8A18501F7A10D0004A8617 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 		3F8A18541F7A17A8004A8617 /* LeaveApplication-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeaveApplication-Prefix.pch"; sourceTree = "<group>"; };
@@ -81,6 +89,10 @@
 		3F9FF1501F75366B0016F385 /* MDUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDUser.m; sourceTree = "<group>"; };
 		3F9FF1521F7538830016F385 /* MDCollectionModelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCollectionModelItem.h; sourceTree = "<group>"; };
 		3F9FF1531F7538830016F385 /* MDCollectionModelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCollectionModelItem.m; sourceTree = "<group>"; };
+		3FA617A71F835525003D76E4 /* LeaveEntriesDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaveEntriesDisplayViewController.h; sourceTree = "<group>"; };
+		3FA617A81F835525003D76E4 /* LeaveEntriesDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaveEntriesDisplayViewController.m; sourceTree = "<group>"; };
+		3FA617AA1F8357FB003D76E4 /* LeaveItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaveItemCell.h; sourceTree = "<group>"; };
+		3FA617AB1F8357FB003D76E4 /* LeaveItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaveItemCell.m; sourceTree = "<group>"; };
 		4251FA9A7B89256E05574987 /* Pods-LeaveApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeaveApplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeaveApplication/Pods-LeaveApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		574A33E5549EDB63DD184F21 /* Pods_LeaveApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeaveApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		810BA0A8C2C2407E33AC31E2 /* Pods-LeaveApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeaveApplication.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeaveApplication/Pods-LeaveApplication.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +125,15 @@
 				574A33E5549EDB63DD184F21 /* Pods_LeaveApplication.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F74363A1F838B3700ADD097 /* LeaveContentEntry */ = {
+			isa = PBXGroup;
+			children = (
+				3F74363E1F838C0600ADD097 /* LeaveApplicationEditViewController.h */,
+				3F74363F1F838C0600ADD097 /* LeaveApplicationEditViewController.m */,
+			);
+			name = LeaveContentEntry;
 			sourceTree = "<group>";
 		};
 		3F8A184E1F7A103F004A8617 /* Views */ = {
@@ -232,6 +253,8 @@
 		3F9FF0CC1F7513370016F385 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3F74363A1F838B3700ADD097 /* LeaveContentEntry */,
+				3FA617A61F83548F003D76E4 /* LeaveEntries */,
 				3F9FF0D11F75174B0016F385 /* Login */,
 			);
 			name = Controllers;
@@ -296,6 +319,19 @@
 				3F95CBE41F78F91100F1A247 /* MDUsers.m */,
 			);
 			name = Users;
+			sourceTree = "<group>";
+		};
+		3FA617A61F83548F003D76E4 /* LeaveEntries */ = {
+			isa = PBXGroup;
+			children = (
+				3FA617A71F835525003D76E4 /* LeaveEntriesDisplayViewController.h */,
+				3FA617A81F835525003D76E4 /* LeaveEntriesDisplayViewController.m */,
+				3F7436371F835A4E00ADD097 /* LeaveEntriesDisplayInteractor.h */,
+				3F7436381F835A4E00ADD097 /* LeaveEntriesDisplayInteractor.m */,
+				3FA617AA1F8357FB003D76E4 /* LeaveItemCell.h */,
+				3FA617AB1F8357FB003D76E4 /* LeaveItemCell.m */,
+			);
+			name = LeaveEntries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,11 +461,14 @@
 				3F95CBE51F78F91100F1A247 /* MDUsers.m in Sources */,
 				3F9FF1511F75366B0016F385 /* MDUser.m in Sources */,
 				3F9AA41C1F7B824400668375 /* NSArray+CustomArray.m in Sources */,
+				3F7436401F838C0600ADD097 /* LeaveApplicationEditViewController.m in Sources */,
 				3F9FF0BD1F75130C0016F385 /* LoginViewController.m in Sources */,
 				3F8A185A1F7A5B50004A8617 /* SignUpView.m in Sources */,
 				3F9DBE7D1F7D0BD8008E93E6 /* EmployeeLeaveInfo.m in Sources */,
 				3F8A185E1F7A6C68004A8617 /* BaseInteractor.m in Sources */,
 				3F95CBEB1F79034500F1A247 /* DataManager.m in Sources */,
+				3F7436391F835A4E00ADD097 /* LeaveEntriesDisplayInteractor.m in Sources */,
+				3FA617A91F835525003D76E4 /* LeaveEntriesDisplayViewController.m in Sources */,
 				3F9FF1541F7538830016F385 /* MDCollectionModelItem.m in Sources */,
 				3F95CBE81F79030300F1A247 /* LoginViewInteractor.m in Sources */,
 				3F9FF0BA1F75130C0016F385 /* AppDelegate.m in Sources */,
@@ -439,6 +478,7 @@
 				3F8A18571F7A584D004A8617 /* SignUpViewController.m in Sources */,
 				3F9FF0B71F75130C0016F385 /* main.m in Sources */,
 				3F9DBE801F7D0D49008E93E6 /* EmployeeLeaveEntry.m in Sources */,
+				3FA617AC1F8357FB003D76E4 /* LeaveItemCell.m in Sources */,
 				3F9AA4191F7B60E000668375 /* NSObject+JSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

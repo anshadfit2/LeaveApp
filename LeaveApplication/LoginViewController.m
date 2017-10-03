@@ -10,6 +10,7 @@
 #import "LoginView.h"
 #import "LoginViewInteractor.h"
 #import "SignUpViewController.h"
+#import "LeaveEntriesDisplayViewController.h"
 
 @interface LoginViewController ()
 
@@ -89,7 +90,7 @@
     user.password = self.loginView.passwordField.text;
     NSError *error;
     if([self.interactor authenticateUser:user error:&error]){
-        SignUpViewController *controller = [SignUpViewController new];
+        LeaveEntriesDisplayViewController *controller = [LeaveEntriesDisplayViewController new];
         [self.navigationController setNavigationBarHidden:NO animated:NO];
         [self.navigationController pushViewController:controller animated:YES];
     }else{
