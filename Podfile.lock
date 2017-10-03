@@ -1,0 +1,21 @@
+PODS:
+  - JSONModel (1.7.0)
+  - PureLayout (3.0.2)
+  - SSZipArchive (2.0.7)
+  - SVProgressHUD (2.2.1)
+
+DEPENDENCIES:
+  - JSONModel
+  - PureLayout
+  - SSZipArchive
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  SSZipArchive: 8c197761d66bd33e7f8b5b51ee57dff303971150
+  SVProgressHUD: db27c54e6e18bc903341661fc9feb55e04905cc4
+
+PODFILE CHECKSUM: 472bbc0f507ad5fc4be07370b98aa89998f11f73
+
+COCOAPODS: 1.2.1
