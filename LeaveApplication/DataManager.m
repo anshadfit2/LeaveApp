@@ -8,6 +8,7 @@
 
 #import "DataManager.h"
 #import "MDUsers.h"
+#import "EmployeeLeaveInfo.h"
 
 @interface DataManager ()
 
@@ -67,21 +68,18 @@
     return employeeLeaveInfo;
 }
 
-- (NSArray *)stubData{
+- (BOOL)saveLeaveEntry:(EmployeeLeaveInfo *)employeeLeaveInfo{
     
-    return @[@{  @"UserName" : @"Qwertyyy",
-                  @"UserId" : @"",
-                  @"LeaveEntries" : @[
-                  @{
-                      @"Date" : @"10-10-2017",
-                      @"Reason" : @"Not working as Fever"
-                  },
-                  @{
-                      @"Date" : @"12-10-2017",
-                      @"Reason" : @"Not working fever, attending marriage"
-                  }]
-                }
-            ];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"userName == [cd] %@",employeeLeaveInfo.userName];
+    EmployeeLeaveInfo *savedEmployeeLeaveInfo = [self.allEmployeeLeaveEntries findFirstByPredicate:predicate];
+    savedEmployeeLeaveInfo.leaveEntries = employeeLeaveInfo.leaveEntries;
+    
+    NSArray *allEmployeeLeaveEntries = [EmployeeLeaveInfo arrayOfDictionariesFromModels:self.allEmployeeLeaveEntries];
+    NSData *employeeData = [NSJSONSerialization dataWithJSONObject:allEmployeeLeaveEntries
+                                                           options:NSJSONWritingPrettyPrinted
+                                                             error:nil];
+    [employeeData writeToFile:[self.fileUrl path] atomically:YES];
+    return YES;
 }
 
 @end

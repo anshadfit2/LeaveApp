@@ -13,7 +13,7 @@
 
 - (EmployeeLeaveInfo *)leaveEntriesForEmployee:(MDUser *)employee;
 
-- (BOOL)saveLeaveEntryForEmployee:(MDUser *)employee;
+- (BOOL)saveLeaveEntry:(EmployeeLeaveInfo *)employeeLeaveInfo;
 
 @required
 

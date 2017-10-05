@@ -12,6 +12,7 @@
 		3F58C1831F792ECB00D66F1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F58C1821F792ECB00D66F1E /* LaunchScreen.storyboard */; };
 		3F7436391F835A4E00ADD097 /* LeaveEntriesDisplayInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7436381F835A4E00ADD097 /* LeaveEntriesDisplayInteractor.m */; };
 		3F7436401F838C0600ADD097 /* LeaveApplicationEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F74363F1F838C0600ADD097 /* LeaveApplicationEditViewController.m */; };
+		3F7436431F83A05200ADD097 /* LeaveApplicationEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7436421F83A05200ADD097 /* LeaveApplicationEditView.m */; };
 		3F8A18511F7A10D0004A8617 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A18501F7A10D0004A8617 /* LoginView.m */; };
 		3F8A18571F7A584D004A8617 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A18561F7A584D004A8617 /* SignUpViewController.m */; };
 		3F8A185A1F7A5B50004A8617 /* SignUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A18591F7A5B50004A8617 /* SignUpView.m */; };
@@ -46,6 +47,8 @@
 		3F7436381F835A4E00ADD097 /* LeaveEntriesDisplayInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaveEntriesDisplayInteractor.m; sourceTree = "<group>"; };
 		3F74363E1F838C0600ADD097 /* LeaveApplicationEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaveApplicationEditViewController.h; sourceTree = "<group>"; };
 		3F74363F1F838C0600ADD097 /* LeaveApplicationEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaveApplicationEditViewController.m; sourceTree = "<group>"; };
+		3F7436411F83A05200ADD097 /* LeaveApplicationEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaveApplicationEditView.h; sourceTree = "<group>"; };
+		3F7436421F83A05200ADD097 /* LeaveApplicationEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaveApplicationEditView.m; sourceTree = "<group>"; };
 		3F8A184F1F7A10D0004A8617 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
 		3F8A18501F7A10D0004A8617 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 		3F8A18541F7A17A8004A8617 /* LeaveApplication-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeaveApplication-Prefix.pch"; sourceTree = "<group>"; };
@@ -127,13 +130,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3F74363A1F838B3700ADD097 /* LeaveContentEntry */ = {
+		3F74363A1F838B3700ADD097 /* LeaveEdit */ = {
 			isa = PBXGroup;
 			children = (
 				3F74363E1F838C0600ADD097 /* LeaveApplicationEditViewController.h */,
 				3F74363F1F838C0600ADD097 /* LeaveApplicationEditViewController.m */,
+				3F7436411F83A05200ADD097 /* LeaveApplicationEditView.h */,
+				3F7436421F83A05200ADD097 /* LeaveApplicationEditView.m */,
 			);
-			name = LeaveContentEntry;
+			name = LeaveEdit;
 			sourceTree = "<group>";
 		};
 		3F8A184E1F7A103F004A8617 /* Views */ = {
@@ -253,7 +258,7 @@
 		3F9FF0CC1F7513370016F385 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3F74363A1F838B3700ADD097 /* LeaveContentEntry */,
+				3F74363A1F838B3700ADD097 /* LeaveEdit */,
 				3FA617A61F83548F003D76E4 /* LeaveEntries */,
 				3F9FF0D11F75174B0016F385 /* Login */,
 			);
@@ -479,6 +484,7 @@
 				3F9FF0B71F75130C0016F385 /* main.m in Sources */,
 				3F9DBE801F7D0D49008E93E6 /* EmployeeLeaveEntry.m in Sources */,
 				3FA617AC1F8357FB003D76E4 /* LeaveItemCell.m in Sources */,
+				3F7436431F83A05200ADD097 /* LeaveApplicationEditView.m in Sources */,
 				3F9AA4191F7B60E000668375 /* NSObject+JSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

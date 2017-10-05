@@ -77,6 +77,7 @@
 - (void)didClickAddButton:(id)sender{
     
     LeaveApplicationEditViewController *controller = [LeaveApplicationEditViewController new];
+    controller.interactor = self.interactor;
     [self.navigationController pushViewController:controller animated:YES];
 }
 

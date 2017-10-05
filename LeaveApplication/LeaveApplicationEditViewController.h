@@ -7,9 +7,10 @@
 //
 
 #import "GeneralViewController.h"
+#import "LeaveEntriesDisplayInteractor.h"
 
 @interface LeaveApplicationEditViewController : GeneralViewController
 
-@property (nonatomic, strong) 
+@property (nonatomic, strong) LeaveEntriesDisplayInteractor *interactor;
 
 @end
